@@ -26,6 +26,8 @@
 		A82B0DF6246751F500FE5E3A /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = A82B0DF2246751E500FE5E3A /* Flights.json */; };
 		A82B0DF7246751F600FE5E3A /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = A82B0DF2246751E500FE5E3A /* Flights.json */; };
 		A82B0DF92467564F00FE5E3A /* FightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B0DF82467564F00FE5E3A /* FightInterfaceController.swift */; };
+		A82B0DFB246782D300FE5E3A /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B0DFA246782D300FE5E3A /* ScheduleInterfaceController.swift */; };
+		A82B0DFD2467840100FE5E3A /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B0DFC2467840100FE5E3A /* FlightRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		A82B0DF2246751E500FE5E3A /* Flights.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Flights.json; sourceTree = "<group>"; };
 		A82B0DF3246751E500FE5E3A /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		A82B0DF82467564F00FE5E3A /* FightInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightInterfaceController.swift; sourceTree = "<group>"; };
+		A82B0DFA246782D300FE5E3A /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
+		A82B0DFC2467840100FE5E3A /* FlightRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 				A82B0DE32467517900FE5E3A /* Assets.xcassets */,
 				A82B0DE52467517900FE5E3A /* Info.plist */,
 				A82B0DF82467564F00FE5E3A /* FightInterfaceController.swift */,
+				A82B0DFA246782D300FE5E3A /* ScheduleInterfaceController.swift */,
+				A82B0DFC2467840100FE5E3A /* FlightRowController.swift */,
 			);
 			path = "WatchKit-101 Extension";
 			sourceTree = "<group>";
@@ -390,6 +396,8 @@
 			files = (
 				A82B0DF92467564F00FE5E3A /* FightInterfaceController.swift in Sources */,
 				A82B0DF5246751F100FE5E3A /* Flight.swift in Sources */,
+				A82B0DFD2467840100FE5E3A /* FlightRowController.swift in Sources */,
+				A82B0DFB246782D300FE5E3A /* ScheduleInterfaceController.swift in Sources */,
 				A82B0DE22467517700FE5E3A /* ExtensionDelegate.swift in Sources */,
 				A82B0DE02467517700FE5E3A /* InterfaceController.swift in Sources */,
 			);
