@@ -1,15 +1,66 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SZU-qq-lM0">
+    <device id="watch42"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <!--Flight-->
+        <scene sceneID="3xy-8z-1Hk">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="Flight" hidesWhenLoading="NO" id="SZU-qq-lM0" customClass="FightInterfaceController" customModule="WatchKit_101_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="sSK-bI-snn">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="Logo" id="1Kp-Ui-LWa">
+                                    <color key="tintColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="0.57983732880000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                                <group alignment="left" layout="vertical" spacing="0.0" id="2ku-eN-MNE">
+                                    <items>
+                                        <label alignment="left" text="Flight 123" id="gNf-Oa-bHn">
+                                            <color key="textColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="0.57983732880000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label alignment="left" text="MEL to SFO" id="lgb-pW-xaB"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="aHJ-eg-M1A">
+                            <items>
+                                <label alignment="left" text="AA123 Boards" id="rgS-xp-S1f"/>
+                                <label height="44" alignment="left" text="15:06" id="3H0-HD-aLZ">
+                                    <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="0.57983732880000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="54"/>
+                                </label>
+                                <label alignment="left" text="On time" id="FZT-8Q-Fc2">
+                                    <color key="textColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <group width="1" alignment="left" id="nMD-es-Kqe">
+                                    <items>
+                                        <label alignment="left" text="Gate 1A" id="iEU-0v-JIL"/>
+                                        <label alignment="right" text="Seat 64A" id="68w-bA-IHa"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="boardTimeLabel" destination="3H0-HD-aLZ" id="zg4-L6-MhE"/>
+                        <outlet property="boardingLabel" destination="rgS-xp-S1f" id="PA7-jp-5hY"/>
+                        <outlet property="flightLabel" destination="gNf-Oa-bHn" id="Cxz-sO-MUD"/>
+                        <outlet property="gateLabel" destination="iEU-0v-JIL" id="Ivk-CD-X8v"/>
+                        <outlet property="routeLabel" destination="lgb-pW-xaB" id="rZ3-0K-xkF"/>
+                        <outlet property="seatLabel" destination="68w-bA-IHa" id="cTk-AG-Fjq"/>
+                        <outlet property="statusLabel" destination="FZT-8Q-Fc2" id="UC1-Kl-Z0p"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-123" y="-32"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="40" height="40"/>
+    </resources>
 </document>

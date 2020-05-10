@@ -21,6 +21,11 @@
 		A82B0DE22467517700FE5E3A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B0DE12467517700FE5E3A /* ExtensionDelegate.swift */; };
 		A82B0DE42467517900FE5E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82B0DE32467517900FE5E3A /* Assets.xcassets */; };
 		A82B0DE82467517900FE5E3A /* WatchKit-101.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A82B0DCE2467517500FE5E3A /* WatchKit-101.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A82B0DF4246751EF00FE5E3A /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B0DF3246751E500FE5E3A /* Flight.swift */; };
+		A82B0DF5246751F100FE5E3A /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B0DF3246751E500FE5E3A /* Flight.swift */; };
+		A82B0DF6246751F500FE5E3A /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = A82B0DF2246751E500FE5E3A /* Flights.json */; };
+		A82B0DF7246751F600FE5E3A /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = A82B0DF2246751E500FE5E3A /* Flights.json */; };
+		A82B0DF92467564F00FE5E3A /* FightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B0DF82467564F00FE5E3A /* FightInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +98,9 @@
 		A82B0DE12467517700FE5E3A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A82B0DE32467517900FE5E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A82B0DE52467517900FE5E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A82B0DF2246751E500FE5E3A /* Flights.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Flights.json; sourceTree = "<group>"; };
+		A82B0DF3246751E500FE5E3A /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		A82B0DF82467564F00FE5E3A /* FightInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +156,7 @@
 				A82B0DAA2467514500FE5E3A /* AppDelegate.swift */,
 				A82B0DAC2467514500FE5E3A /* SceneDelegate.swift */,
 				A82B0DAE2467514500FE5E3A /* ViewController.swift */,
+				A82B0DF1246751E500FE5E3A /* Shared */,
 				A82B0DB02467514500FE5E3A /* Main.storyboard */,
 				A82B0DB32467514600FE5E3A /* Assets.xcassets */,
 				A82B0DB52467514600FE5E3A /* LaunchScreen.storyboard */,
@@ -182,8 +191,18 @@
 				A82B0DE12467517700FE5E3A /* ExtensionDelegate.swift */,
 				A82B0DE32467517900FE5E3A /* Assets.xcassets */,
 				A82B0DE52467517900FE5E3A /* Info.plist */,
+				A82B0DF82467564F00FE5E3A /* FightInterfaceController.swift */,
 			);
 			path = "WatchKit-101 Extension";
+			sourceTree = "<group>";
+		};
+		A82B0DF1246751E500FE5E3A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A82B0DF2246751E500FE5E3A /* Flights.json */,
+				A82B0DF3246751E500FE5E3A /* Flight.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A82B0DB72467514600FE5E3A /* LaunchScreen.storyboard in Resources */,
+				A82B0DF6246751F500FE5E3A /* Flights.json in Resources */,
 				A82B0DB42467514600FE5E3A /* Assets.xcassets in Resources */,
 				A82B0DB22467514500FE5E3A /* Main.storyboard in Resources */,
 			);
@@ -338,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A82B0DE42467517900FE5E3A /* Assets.xcassets in Resources */,
+				A82B0DF7246751F600FE5E3A /* Flights.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A82B0DAF2467514500FE5E3A /* ViewController.swift in Sources */,
+				A82B0DF4246751EF00FE5E3A /* Flight.swift in Sources */,
 				A82B0DAB2467514500FE5E3A /* AppDelegate.swift in Sources */,
 				A82B0DAD2467514500FE5E3A /* SceneDelegate.swift in Sources */,
 			);
@@ -366,6 +388,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82B0DF92467564F00FE5E3A /* FightInterfaceController.swift in Sources */,
+				A82B0DF5246751F100FE5E3A /* Flight.swift in Sources */,
 				A82B0DE22467517700FE5E3A /* ExtensionDelegate.swift in Sources */,
 				A82B0DE02467517700FE5E3A /* InterfaceController.swift in Sources */,
 			);
